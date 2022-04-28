@@ -8,4 +8,7 @@ describe('Test my fromWhere Function',function(){
     it('it should return the name of the town when registration number starting with "CY" is passed',function(){
         assert.equal('Bellville',fromWhere('CY'))
     })
+    it('it should return the name of the town when registration number starting with "CJ" is passed',function(){
+        assert.equal('Paarl',fromWhere('CJ'))
+    })
 })
