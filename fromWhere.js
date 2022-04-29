@@ -13,6 +13,8 @@ function fromWhere(regNo){
       else if(town3.includes(regNo)){
       return 'Cape Town'}
       
-      else if(town4.includes(regNo)){
-      return 'Some other place!'}
+      else{
+        return 'Some other place!'
+      }
+      
     }
