@@ -46,10 +46,5 @@ describe('Test my mostProfitableDepartment',function(){
   it('It should return "electronics" as the most profitable department',function(){
       assert.equal('electronics',mostProfitableDepartment(dataList2));
   })
-  it('It should return "Thursday" as the most profitable day',function(){
-    assert.equal('Thursday',mostProfitableDay(dataList));
-  })
-  it('It should return "Wednesday" as the most profitable day',function(){
-  assert.equal('Wednesday',mostProfitableDay(dataList2));
-  })
+  
 })

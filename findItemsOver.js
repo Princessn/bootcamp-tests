@@ -32,15 +32,14 @@ var results3 = [
   {name : 'apples', qty : 37}
 ];
 
-function findItemsOver20(items){
-  var over20 = [];
+function findItemsOver(items, threshold){
+  var over = [];
   
   for(var i = 0; i < items.length; i++){
-    if(items[i].qty > 20){
-      over20.push(items[i]);
+    if(items[i].qty > threshold){
+      over.push(items[i]);
     }
   }
   
-  return over20;
+  return over;
 }
-    

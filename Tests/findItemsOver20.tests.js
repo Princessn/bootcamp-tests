@@ -1,14 +1,12 @@
-describe('The findItemsOver20 function', function () {
-    
-        it("should return the names of all item over20 in qty when 'findItemsOver20' is passed", function(){
-        assert.equal(findItemsOver20  [
-            {name : 'apples', qty : 40},{name : 'apples', qty : 37}, 
-            {name : 'pears', qty : 20}, {name : 'bananas', qty : 23} ]) 
-        })
-        it("should return all item with over20 qty from the string when 'findItemsOver20' is passed", function(){
-            assert.equal(findItemsOver20 ['pears ,qty  37' , 'bananas,qty 27'])
-        })
-        it("should return 0 when thereare noitems with over20 qty from the string when 'findItemsOver20' is passed", function(){
-            assert.equal(findItemsOver20 ['apples ,qty  14' , 'bananas,qty 8'])
-        })
+describe('test findItemsOver20 function', function () {
+    it('should return all the products quantity higher that 20', function () {
+        assert.deepEqual(results, findItemsOver20(itemList));
+    });
+    it('should return an empty list if there are no items less than 20', function () {
+        assert.deepEqual(results2, findItemsOver20(itemList2));
+    });
+    it('should return all the products quantity higher that 20 ', function () {
+        assert.deepEqual(results3, findItemsOver20(itemList3));  
+    });
+
     });
